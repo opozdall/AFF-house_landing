@@ -16,7 +16,8 @@
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1215px;
+    padding-left: 15px;
     margin: 0 auto;
 }
 
@@ -29,18 +30,19 @@
 .logo {
     width: 243px;
     height: 45px;
+    margin-bottom: 5px;
     cursor: pointer;
     background-image: url("/assets/img/logo.png");
 }
 
 .header-links-container {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
+    width: 555px;
 }
 
 .nav-list {
@@ -88,6 +90,8 @@
 }
 
 header .header-buttons .button-signup {
+    width: 120px;
+    margin-left: 5px;
     border: 1px solid #FFFFFF;
     border-radius: 3px;
 }
@@ -157,7 +161,7 @@ header .header-buttons .button-signup {
     z-index: -100;
     position: absolute;
     top: 458px;
-    left: 256px;
+    left: 226px;
     width: 40px;
     height: 40px;
     background-color: #3083FF;
@@ -179,8 +183,8 @@ header .header-buttons .button-signup {
 .hero-background-mid-left-ellipse-small-cyan {
     z-index: -100;
     position: absolute;
-    top: 594px;
-    left: 192px;
+    top: 565px;
+    left: 163px;
     width: 29px;
     height: 29px;
     border: 6px solid #85E5FD;
@@ -236,8 +240,8 @@ header .header-buttons .button-signup {
 .hero-background-bottom-center-ellipse-medium-white {
     z-index: -100;
     position: absolute;
-    top: 671px;
-    left: 717.94px;
+    top: 677px;
+    left: 708.94px;
     width: 29px;
     height: 29px;
     background-color: #FFFFFF;
@@ -247,19 +251,20 @@ header .header-buttons .button-signup {
 .hero-background-bottom-center-ellipse-small-white {
     z-index: -100;
     position: absolute;
-    top: 829.59px;
-    left: 794.59px;
+    top: 808.59px;
+    left: 781.59px;
     width: 17px;
     height: 17px;
     background-color: #FFFFFF;
     border-radius: 100%;
+    filter: blur(6px);
 }
 
 .hero-background-bottom-center-ellipse-big-white {
     z-index: -100;
     position: absolute;
-    top: 761px;
-    left: 1067.9px;
+    top: 770px;
+    left: 1052.9px;
     width: 47px;
     height: 47px;
     background-color: #FFFFFF;
@@ -269,8 +274,8 @@ header .header-buttons .button-signup {
 .hero-background-top-right-ellipse-small-cyan {
     z-index: -100;
     position: absolute;
-    top: 248px;
-    left: 1655.01px;
+    top: 252px;
+    left: 1648.01px;
     width: 22px;
     height: 22px;
     background-color: #72EBF9;
@@ -322,28 +327,6 @@ header .header-buttons .button-signup {
     box-shadow: 0px 17px 24px #058CAD54;
 }
 
-.hero-background-mid-right-ellipse-medium-white {
-    z-index: -100;
-    position: absolute;
-    top: 686px;
-    left: 1271px;
-    width: 14px;
-    height: 14px;
-    background: #ffffff;
-    border-radius: 100%;
-}
-
-.hero-background-mid-right-ellipse-medium-white {
-    z-index: -100;
-    position: absolute;
-    top: 213px;
-    left: 1464px;
-    width: 19px;
-    height: 19px;
-    background: #ffffff;
-    border-radius: 100%;
-}
-
 .hero-background-mid-right-ellipse-small-white {
     z-index: -100;
     position: absolute;
@@ -369,8 +352,8 @@ header .header-buttons .button-signup {
 .hero-background-top-right-ellipse-small-blue {
     z-index: -100;
     position: absolute;
-    top: 213px;
-    left: 1464px;
+    top: 194px;
+    left: 1445px;
     width: 19px;
     height: 19px;
     background: #3083FF;
@@ -388,7 +371,7 @@ header .header-buttons .button-signup {
 }
 
 .hero-content {
-    margin-top: 140px;
+    padding-top: 78px;
 }
 
 .hero-text-container {
@@ -417,11 +400,11 @@ header .header-buttons .button-signup {
     font-size: 18px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    letter-spacing: 0px;
+    letter-spacing: 0.2px;
 }
 
 .hero-signup-button {
-    margin-top: 90px;
+    margin-top: 87px;
     width: 250px;
     height: 55px;
     cursor: pointer;
@@ -453,19 +436,14 @@ header .header-buttons .button-signup {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     row-gap: 100px;
-    column-gap: 200px;
+    column-gap: 185px;
 }
 
 .feature-item {
-    padding: 20px;
+    max-width: 475px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
     text-align: center;
-}
-
-.feature-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
@@ -496,12 +474,12 @@ header .header-buttons .button-signup {
 
 .payments-icon {
     background-color: #C037D7;
-    background-image: url(/assets/icons/profile.svg);
+    background-image: url(/assets/icons/wallet.svg);
     box-shadow: 0px 8px 30px 6px #BC43D066;
 }
 
 .feature-title {
-    margin: 30px 0 20px;
+    margin: 40px 0 25px;
     cursor: default;
     color: #541CAE;
     line-height: 100%;
